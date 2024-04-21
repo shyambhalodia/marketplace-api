@@ -1,0 +1,21 @@
+service: marketplace-api
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  memorySize: 2048
+  stage: dev
+  region: ap-south-1
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - http: ANY /{proxy+}
+      - http: ANY /
+    environment:
+      DB_HOST: marketplace.cjueywqw0p8s.ap-south-1.rds.amazonaws.com
+      DB_USER: admin
+      DB_PASSWORD: Password
+      DB_NAME: marketplace
