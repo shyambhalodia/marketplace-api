@@ -50,3 +50,59 @@
 
 ==> npm test
 ==> This command will execute the test cases defined in your test files using Jest. Make sure to configure your test environment and mocks properly for accurate testing.
+
+# Deployment
+
+==> To deploy the Marketplace Serverless API, use the following command: npm run deploy
+
+This command will deploy the serverless Lambda functions to your AWS account.
+
+# Severless endpoint
+
+==> https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev
+
+# API Endpoints
+
+==> Providers
+
+GET ALL Providers
+Endpoint: GET https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/providers
+Description: Retrieve all service providers.
+
+    CREATE Provider
+    Endpoint: POST https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/providers
+    Description: Create a new service provider.
+
+    GET SINGLE Provider
+    Endpoint: GET https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/providers/:id
+    Description: Retrieve details of a single service provider by ID.
+
+    UPDATE Provider
+    Endpoint: PUT https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/providers/:id
+    Description: Update details of a single service provider by ID.
+
+    DELETE Provider
+    Endpoint: DELETE https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/providers/:id
+    Description: Delete a single service provider by ID.
+
+==> Services
+
+GET ALL Services
+Endpoint: GET https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/services
+Description: Retrieve all services offered.
+
+    CREATE Service
+    Endpoint: POST https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/services
+    Description: Create a new service.
+
+    GET SINGLE Service
+    Endpoint: GET https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/services/:id
+    Description: Retrieve details of a single service by ID.
+
+    UPDATE Service
+    Endpoint: PUT https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/services/:id
+    Description: Update details of a single service by ID.
+
+    DELETE Service
+    Endpoint: DELETE https://vr40bisyck.execute-api.ap-south-1.amazonaws.com/dev/services/:id
+    Description: Delete a single service by ID.
